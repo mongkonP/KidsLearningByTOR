@@ -1,17 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>f1882239-d2d0-4fa2-8b1b-0acfcb38f537</ProjectGuid>
+    <ProjectGuid>{F1882239-D2D0-4FA2-8B1B-0ACFCB38F537}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>KidsLearningLib</RootNamespace>
     <AssemblyName>KidsLearningLib</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,24 +32,69 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TORServices.DB">
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.DB.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Drawings">
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.Drawings.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Forms">
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Maths">
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.Maths.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Network">
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.PathFile">
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.PathFile.dll</HintPath>
+    </Reference>
+    <Reference Include="TORServices.Systems">
+      <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\TORServices.Systems.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Exten\Ext.cs" />
+    <Compile Include="Exten\ExtConverts.cs" />
+    <Compile Include="Exten\ExtGraphics.cs" />
+    <Compile Include="Exten\ExtGraphics_Eng.cs" />
+    <Compile Include="Exten\ExtGraphics_Eq.cs" />
+    <Compile Include="Exten\ExtGraphics_Maths.cs" />
+    <Compile Include="Exten\ExtMath_sentence.cs" />
+    <Compile Include="Exten\listNum_A_B.cs" />
+    <Compile Include="Exten\Maths.cs" />
+    <Compile Include="Exten\RandomNumber.cs" />
+    <Compile Include="Exten\TokenTestChoie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

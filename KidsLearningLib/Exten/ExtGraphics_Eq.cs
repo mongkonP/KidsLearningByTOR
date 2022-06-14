@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KidsLearningLib
+namespace KidsLearningLib.Exten
 {
-    public class Class1
+   public static class ExtGraphics_Eq
     {
     }
 }
