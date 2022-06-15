@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using TORServices.Drawings;
+using TORServices.Maths;
 using static KidsLearningLib.Exten.Maths;
 
 namespace KidsLearningLib.Exten

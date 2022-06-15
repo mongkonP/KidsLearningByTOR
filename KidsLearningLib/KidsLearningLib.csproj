@@ -32,8 +32,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EPPlus, Version=6.0.5.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.6.0.5\lib\net462\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.Interfaces.6.0.0\lib\net452\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.0.0.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.System.Drawing.6.0.0\lib\net452\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net46\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.WindowsAPICodePack">
       <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\Microsoft.WindowsAPICodePack.dll</HintPath>
@@ -41,13 +53,17 @@
     <Reference Include="Microsoft.WindowsAPICodePack.Shell">
       <HintPath>..\..\..\Test_Code\test_Csharp_TOR\testClassTOR\TORServices\File DLL\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -77,6 +93,90 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\EngControl\Eng_Basic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\ButtonCollections.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\Checknowledge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\Choie4Choie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\ChoiePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\frmAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\frmWaitFormDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\MyProperties.cs" />
+    <Compile Include="Control\Exten\PanelPrint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\ScorePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\ScorePanelInterface.cs" />
+    <Compile Include="Control\Exten\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Exten\UserControlPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Exten\UserControlPrint.Designer.cs">
+      <DependentUpon>UserControlPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MathControl\Number\Math_Distribution.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MathControl\Number\Math_Number1to50.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MathControl\Number\Math_NumberArabicAndThai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MathControl\Number\Math_NumberString.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MathControl\Number\Math_NumberToText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MathControl\Operate\Math_operate_.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MathControl\Operate\Math_operate_.Designer.cs">
+      <DependentUpon>Math_operate_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MathControl\Operate\NumberOperater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ThaiControl\KorKaiChoie4Choie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ThaiControl\KorKaiChoieMultiChoie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UnitMeasure\balance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UnitMeasure\Class1.cs" />
+    <Compile Include="Control\UnitMeasure\clock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UnitMeasure\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UnitMeasure\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Exten\Ext.cs" />
     <Compile Include="Exten\ExtConverts.cs" />
     <Compile Include="Exten\ExtGraphics.cs" />
@@ -86,15 +186,185 @@
     <Compile Include="Exten\ExtMath_sentence.cs" />
     <Compile Include="Exten\listNum_A_B.cs" />
     <Compile Include="Exten\Maths.cs" />
-    <Compile Include="Exten\RandomNumber.cs" />
     <Compile Include="Exten\TokenTestChoie.cs" />
+    <Compile Include="Print\prnClass.cs" />
+    <Compile Include="Print\prnConvertUnit.cs" />
+    <Compile Include="Print\prnDistance.cs" />
+    <Compile Include="Print\ptnEng\plntEng_Word.cs" />
+    <Compile Include="Print\ptnMth\prnMath_DateTime.cs" />
+    <Compile Include="Print\ptnMth\prnMath_Equation.cs" />
+    <Compile Include="Print\ptnMth\prnMath_Fraction.cs" />
+    <Compile Include="Print\ptnMth\prnMath_Gauge.cs" />
+    <Compile Include="Print\ptnMth\prnMath_Geometry.cs" />
+    <Compile Include="Print\ptnMth\prnMath_Money.cs" />
+    <Compile Include="Print\ptnMth\prnMath_Num.cs" />
+    <Compile Include="Print\ptnMth\prnMath_Numberline.cs" />
+    <Compile Include="Print\ptnMth\prnMath_Ruleofthree.cs" />
+    <Compile Include="Print\ptnMth\prnMath_Statistics.cs" />
+    <Compile Include="Print\ptnMth\prnMath_Trigonometry.cs" />
+    <Compile Include="Print\ptnSci\prnSci_Prefixes_Uint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\EngControl\Eng_Basic.resx">
+      <DependentUpon>Eng_Basic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Exten\Checknowledge.resx">
+      <DependentUpon>Checknowledge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Exten\Choie4Choie.resx">
+      <DependentUpon>Choie4Choie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Exten\ChoiePanel.resx">
+      <DependentUpon>ChoiePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Exten\frmAlert.resx">
+      <DependentUpon>frmAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Exten\ScorePanel.resx">
+      <DependentUpon>ScorePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Exten\UserControlPrint.resx">
+      <DependentUpon>UserControlPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MathControl\Number\Math_Distribution.resx">
+      <DependentUpon>Math_Distribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MathControl\Number\Math_Number1to50.resx">
+      <DependentUpon>Math_Number1to50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MathControl\Number\Math_NumberArabicAndThai.resx">
+      <DependentUpon>Math_NumberArabicAndThai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MathControl\Number\Math_NumberString.resx">
+      <DependentUpon>Math_NumberString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MathControl\Number\Math_NumberToText.resx">
+      <DependentUpon>Math_NumberToText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MathControl\Operate\Math_operate_.resx">
+      <DependentUpon>Math_operate_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MathControl\Operate\NumberOperater.resx">
+      <DependentUpon>NumberOperater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ThaiControl\KorKaiChoie4Choie.resx">
+      <DependentUpon>KorKaiChoie4Choie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ThaiControl\KorKaiChoieMultiChoie.resx">
+      <DependentUpon>KorKaiChoieMultiChoie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UnitMeasure\balance.resx">
+      <DependentUpon>balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UnitMeasure\clock.resx">
+      <DependentUpon>clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UnitMeasure\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ChoiceTest\ptnBio\" />
+    <Folder Include="ChoiceTest\ptnChem\" />
+    <Folder Include="ChoiceTest\ptnEng\" />
+    <Folder Include="ChoiceTest\ptnMth\" />
+    <Folder Include="ChoiceTest\ptnPhy\" />
+    <Folder Include="ChoiceTest\ptnSci\" />
+    <Folder Include="ChoiceTest\ptnTh\" />
+    <Folder Include="Control\MathControl\Trigonometry\" />
+    <Folder Include="Control\PhyControl\" />
+    <Folder Include="Print\ptnBio\" />
+    <Folder Include="Print\ptnChem\" />
+    <Folder Include="Print\ptnPhy\" />
+    <Folder Include="Print\ptnTh\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbox %28custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled %28custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wait2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bye.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClockP %28Custom%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_finance_financial_report_1889193.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_microscope-lab-science-school_2824435.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_package_graphics_6610.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %28custom%29 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %28custom%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korkai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log ou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เส้นจำนวน -10 ถึง 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เส้นจำนวน -4 ถึง 20.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
